@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left{
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    display: flex;
+   flex-direction: column;
+   row-gap: 150px;
+}
+.nav{
+    align-self:flex-end;
+    width:70%;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    padding: 20%;
+    row-gap: 20px;
+}
+.text h1{
+    font-size:52px;
+}
+.text p{
+    color:grey;
+}
+.text a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    width: 40px;
+}
+.left .nav ul{
+    display: flex;
+    column-gap: 10px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li {
+    list-style-type: none;
+}
+li a{
+    text-decoration:none;
+    font-size:2vw;
+    font-weight: 500;
+    color:black;
+}
+.right{
+    background-color: green;
+    width: 70%;
+    height: 100%;
+}
+.right-top{
+   height: 50%;
+   width: 100%;
+   display: flex;
+}
+.top-left{
+    width: 50%;
+    height: 100%;
+    background-image: url("https://media.istockphoto.com/id/173854827/photo/pink-cactus-flower-pot-isolated-plant-white-houseplant.jpg?s=2048x2048&w=is&k=20&c=7tm8Xlu2DtlA6S6SJgefzhyPegtGnafMyDqawBiUwJA=");
+    background-position:center;
+    background-size: cover;
+}
+.top-right{
+    width: 50%;
+    background-color:pink;
+    height: 100%;
+    background-image: url("https://media.istockphoto.com/id/1479018278/photo/delicious-cut-oranges.jpg?s=2048x2048&w=is&k=20&c=IozSPzopJD60O9a6UENxFG2srawmyq694BJq_GE1LKo=");
+    background-position: center;
+    background-size: cover;
+}
+
+.right-bottom{
+  background-color:grey;
+  height: 50%;
+  width: 100%;
+  background-image: url("https://media.istockphoto.com/id/1289951170/photo/small-cactus-in-a-pot-on-a-blue-background-in-the-style-of-minimalism.jpg?s=2048x2048&w=is&k=20&c=IaTaDeCKiodKadJlVRn_8BzSseLkraBhsHZou8Ogqf4=");
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width:500px){
+    .main{
+        flex-direction: column;
+    }
+     .left{
+        width: 100%;
+        row-gap: 10px;
+        height: 100%;
+    }
+   
+    li a{
+        font-size:4vw;
+        font-weight: 500;
+    }
+    .text{
+        padding: 10%;
+    }
+    .right{
+        width: 100%;
+    }
+    .top-right{
+        width: 50%;
+    }
+}
